@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-landing</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Concert+One&family=Fjalla+One&display=swap');
+
+        
+        #header{
+            background-color: bisque;
+            position: fixed;
+            top:0;
+            min-height: 75px;
+            padding: 0px 20px;
+            display: flex;
+            width: 100%;
+            
+        }
+
+        #header-img{
+            max-width: 120px;
+            max-height: 110px;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+            font-weight: 400;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        nav{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding: 0 50px;
+            font-family: 'Concert One', cursive;
+            font-size: medium;
+        }
+        
+        #ideal{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 0 50px;
+            font-family: 'Fjalla One', sans-serif;
+            font-display: auto;
+            
+        }
+        
+    
+    </style>
+</head>
+<body>
+
+    <header id="header">
+
+        <img id="header-img" src="https://i.pinimg.com/600x315/51/82/d3/5182d364e2b1beea463431302d6bb2c1.jpg" alt="Fitness logo">
+
+        <h1 id="ideal">YOUR IDEAL PROGRAM</h1>
+
+        <nav id="nav-bar">
+            
+            <ul>
+                <li><a class="nav-link" href="#our-programs">OUR PROGRAMS</a></li>
+            </ul>
+            <ul>
+                <li><a class="nav-link" href="#our-meal-plans">OUR MEAL PLANS</a></li>
+            </ul>
+            <ul>
+                <li><a class="nav-link" href="#contact-us">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video">
+    
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9g29dCXHOSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
