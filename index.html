@@ -22,6 +22,8 @@
             display: flex;
             width: 100%;
             
+    
+            
         }
 
         #header-img{
@@ -60,7 +62,32 @@
             font-display: auto;
             
         }
+
+        .video{
+            margin-left: 29%;
+            margin-right: 29%;
+            margin-top: 10%;
+            
+        }
         
+        .form{
+            text-align: center;
+            font-family: 'Concert One', cursive;
+        }
+        #email{
+            font-family: 'Concert One', cursive;
+            max-width: 100%;
+            width: fit-content;
+            
+        }
+
+       body{
+           background-image: url(https://img.freepik.com/free-vector/wave-textures-cream-background-vector_53876-60290.jpg?size=626&ext=jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+
+       }
+
     
     </style>
 </head>
@@ -87,7 +114,19 @@
     </header>
     <div class="video">
     
+        
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9g29dCXHOSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+        
+    </div><br><br><br>
+
+    <div class="form">
+        <form action=" https://www.freecodecamp.com/email-submit">
+            <label>Join our community and receive weekly recipe ideas as well as exclusive workout tips!</label><br><br>
+            <input id="email" type="email" placeholder="Enter your e-mail here">
+            <button id="submit" type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    
 </body>
 </html>
