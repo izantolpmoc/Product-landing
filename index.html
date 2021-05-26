@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Concert+One&family=Fjalla+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
         
         #header{
             background-color: bisque;
@@ -21,7 +21,7 @@
             padding: 0px 20px;
             display: flex;
             width: 100%;
-            
+            z-index: 10;
     
             
         }
@@ -51,7 +51,10 @@
             padding: 0 50px;
             font-family: 'Concert One', cursive;
             font-size: medium;
+            
         }
+
+        @media(max-width:100px){nav{width: 50%;}}
         
         #ideal{
             display: flex;
@@ -73,11 +76,12 @@
         .form{
             text-align: center;
             font-family: 'Concert One', cursive;
+            font-size: larger;
         }
         #email{
             font-family: 'Concert One', cursive;
             max-width: 100%;
-            width: fit-content;
+            width: 20%;
             
         }
 
@@ -85,10 +89,85 @@
            background-image: url(https://img.freepik.com/free-vector/wave-textures-cream-background-vector_53876-60290.jpg?size=626&ext=jpg);
            background-repeat: no-repeat;
            background-size: cover;
+           max-width: 100%;
 
        }
 
-    
+       .heart {
+           position: relative;
+           margin: auto;
+           top: 0;
+           right: 0;
+           bottom: 0;
+           left: 0;
+           background-color: pink;
+           height: 50px;
+           width: 50px;
+           transform: rotate(-45deg);
+           display: flex;
+           
+       }
+       .heart ::before {
+            content: "";
+            background-color: pink;
+            border-radius: 50%;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            top: 25px;
+            left: 0px;
+
+       }
+
+       .heart ::after{
+           background-color: pink;
+           content: "";
+           border-radius: 50%;
+           position: relative;
+           width: 50px;
+           height: 50px;
+           top: 0px;
+           left: 25px;
+       }
+
+       .hearts {
+           margin-left: -30%;
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           position: relative;
+          
+       }
+       .symetrie {
+           margin-right: -30%;
+           display: flex;
+           flex-direction: column;
+           margin-top: -185px;
+           flex-wrap: wrap;
+       }       
+
+       .programs {
+           display: flex;
+           flex-direction: column;
+           position: absolute;
+           font-family: 'Fjalla One', sans-serif;
+           font-size: 20px;
+           font-weight: 500;
+           font-display: stretch;
+           flex-wrap: wrap;
+           margin-left: 535px;
+           margin-top: -195px;
+           text-align: center;
+         
+           
+           
+           
+       }
+    h1{
+        text-align: center;
+        font-family: 'Fjalla One', sans-serif;
+    }
+
     </style>
 </head>
 <body>
@@ -117,16 +196,105 @@
         
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9g29dCXHOSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
-    </div><br><br><br>
+    </div><br><br>
 
-    <div class="form">
-        <form action=" https://www.freecodecamp.com/email-submit">
-            <label>Join our community and receive weekly recipe ideas as well as exclusive workout tips!</label><br><br>
-            <input id="email" type="email" placeholder="Enter your e-mail here">
-            <button id="submit" type="submit">Subscribe</button>
-        </form>
+    <h1 id="our-programs">OUR PROGRAMS</h1><br>
+    <div class="hearts">
+    
+   
+        <div class="heart"></div>
+        
+        
+        <br>
+  
+        <div class="heart"></div>
+       
+        <br>
+   
+        <div class="heart"></div>
+        
+    </div>
+    <div class="programs">
+        <ul>
+            <li>GET FIT FAST</li>
+        </ul>
+        
+        <ul>
+            <li>SUMMER BODY CHALLENGE</li>
+        </ul>
+        
+        <ul><li>LET'S TAKE IT EASY</li>
+        </ul>
     </div>
 
+    <div class="symetrie">
+        <div class="heart"></div>
+        
+        
+        <br>
+  
+        <div class="heart"></div>
+       
+        <br>
+   
+        <div class="heart"></div>
+    </div>
+
+    <br><br><br>
+
+    <h1 id="our-meal-plans">OUR MEAL PLANS</h1><br>
+    <div class="hearts">
     
+   
+        <div class="heart"></div>
+        
+        
+        <br>
+  
+        <div class="heart"></div>
+       
+        <br>
+   
+        <div class="heart"></div>
+        
+    </div>
+    <div class="programs">
+        <ul>
+            <li>EASY RECIPES</li>
+        </ul>
+        
+        <ul>
+            <li>VEGAN RECIPES</li>
+        </ul>
+        
+        <ul><li>HIGH PROTEIN SNACKS</li>
+        </ul>
+    </div>
+
+    <div class="symetrie">
+        <div class="heart"></div>
+        
+        
+        <br>
+  
+        <div class="heart"></div>
+       
+        <br>
+   
+        <div class="heart"></div>
+    </div> <br><br><br><br>
+   
+
+    
+
+    <div class="form">
+        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+            <label id="contact-us">Join our community and receive weekly recipe ideas as well as exclusive workout tips!</label><br><br>
+            <input name="email" id="email" type="email" placeholder="Enter your e-mail here">
+            <input id="submit" type="submit"></input>
+        </form><br><br>
+    </div>
+
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
